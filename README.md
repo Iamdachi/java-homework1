@@ -7,7 +7,7 @@ Java project demonstrating compilation, running, and creating an executable JAR.
 src/
 └── WelcomeToJava/
     └── WelcomeMain.java
-
+```
 
 ### Compilation
 Navigate to `src` directory (where `WelcomeToJava` package is) and run:
