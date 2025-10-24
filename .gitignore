@@ -1,6 +1,6 @@
 *.class
 *.jar
-**/manifest.txt
+manifest.txt
 
 ### IntelliJ IDEA ###
 out/
