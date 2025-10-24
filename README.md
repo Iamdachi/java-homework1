@@ -2,17 +2,43 @@
 
 Java project demonstrating compilation, running, and creating an executable JAR.
 
+### Learning about classes
+This project also demonstrates different types of classes:
+
+1. **Inner Class**
+    - Example: `NotificationSystem.EmailNotification`
+    - Tied to an instance of the outer class, can access its fields.
+
+2. **Static Nested Class**
+    - Example: `NotificationSystem.SMSNotification`
+    - Works independently of the outer class instance.
+
+3. **Anonymous Class**
+    - Example: custom comparators or runnables
+    - Allows inline, one-off behavior without creating a separate class.
+
+4. **Local Class**
+    - Example: `PaymentProcessor.processPayment()` -> `Receipt`
+    - Defined inside a method, used only within that method.
+
+
+### Dependencies
+- commons-math3-3.6.1.jar ([Download link](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip))
+
 ### Project Structure
 ```bash 
 src/
 └── WelcomeToJava/
-    └── MatrixUtils.java
-    └── WelcomeMain.java
+    ├── MatrixUtils.java
+    ├── WelcomeMain.java
+    ├── NotificationSystem.java
+    └── PaymentProcessor.java
 lib/
 └── commons-math3-3.6.1.jar
 ```
 
 ### Compilation
+Create the bytecode from the source code. `.java` files to `.class` files.
 ```bash
 javac -cp lib/commons-math3-3.6.1.jar -d out src/WelcomeToJava/*.java
 ```
