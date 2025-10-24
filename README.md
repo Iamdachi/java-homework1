@@ -2,6 +2,9 @@
 
 Java project demonstrating compilation, running, and creating an executable JAR.
 
+### Dependencies
+- commons-math3-3.6.1.jar ([Download link](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip))
+
 ### Project Structure
 ```bash 
 src/
@@ -13,6 +16,7 @@ lib/
 ```
 
 ### Compilation
+Create the bytecode from the source code. `.java` files to `.class` files.
 ```bash
 javac -cp lib/commons-math3-3.6.1.jar -d out src/WelcomeToJava/*.java
 ```
