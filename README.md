@@ -2,6 +2,19 @@
 
 Java project demonstrating compilation, running, and creating an executable JAR.
 
+### Using Anonymous classes and lambdas
+Last task is to replace all previous classes with anonymous classes and lambdas. I did this, but not to have a very long
+main file, I broke up all of this logic into handler classes with static methods. All handlers use anonymous classes and
+lambda expressions to implement their respective interfaces.
+
+WelcomeMain calls handlers for:
+
+- Matrix operations (MatrixHandler)
+- Notifications (NotificationHandler)
+- Sorting (Sorter)
+- Payments (PaymentHandler)
+
+
 ### Dependencies
 - commons-math3-3.6.1.jar ([Download link](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip))
 
@@ -9,10 +22,17 @@ Java project demonstrating compilation, running, and creating an executable JAR.
 ```bash 
 src/
 └── WelcomeToJava/
-    └── MatrixUtils.java
-    └── WelcomeMain.java
-    └── NotificationSystem.java
-    └── PaymentProcessor.java
+    ├── WelcomeMain.java
+    ├── interfaces/
+    │   ├── MatrixOperation
+    │   ├── MatrixPrinter
+    │   ├── Notifier
+    │   └── Payment
+    └── handlers/
+        ├── MatrixHandler
+        ├── NotificationHandler
+        ├── PaymentHandler
+        └── Sorter
 lib/
 └── commons-math3-3.6.1.jar
 ```
@@ -70,22 +90,3 @@ java -cp "WelcomeApp.jar:lib/commons-math3-3.6.1.jar" WelcomeToJava.WelcomeMain
 `lib/commons-math3-3.6.1.jar` - external Commons Math library
 
 `WelcomeToJava.WelcomeMain` - fully qualified main class
-
-### Learning about classes
-This project also demonstrates different types of classes:
-
-1. **Inner Class**
-    - Example: `NotificationSystem.EmailNotification`
-    - Tied to an instance of the outer class, can access its fields.
-
-2. **Static Nested Class**
-    - Example: `NotificationSystem.SMSNotification`
-    - Works independently of the outer class instance.
-
-3. **Anonymous Class**
-    - Example: custom comparators or runnables
-    - Allows inline, one-off behavior without creating a separate class.
-
-4. **Local Class**
-    - Example: `PaymentProcessor.processPayment()` -> `Receipt`
-    - Defined inside a method, used only within that method.
