@@ -1,6 +1,5 @@
 # welcometojava
 
-Java project demonstrating compilation, running, and creating an executable JAR.
 
 ### Using Anonymous classes and lambdas
 Last task is to replace all previous classes with anonymous classes and lambdas. I did this, but not to have a very long
