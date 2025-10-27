@@ -23,6 +23,7 @@ This project also demonstrates different types of classes:
 
 
 ### Dependencies
+- Java 25
 - commons-math3-3.6.1.jar ([Download link](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip))
 
 ### Project Structure
@@ -35,6 +36,13 @@ src/
     └── PaymentProcessor.java
 lib/
 └── commons-math3-3.6.1.jar
+```
+
+### This project was tested using given Java version
+```bash
+openjdk 25 2025-09-16
+OpenJDK Runtime Environment (build 25+36-Ubuntu-124.04.2)
+OpenJDK 64-Bit Server VM (build 25+36-Ubuntu-124.04.2, mixed mode, sharing)
 ```
 
 ### Install Dependencies
