@@ -1,4 +1,4 @@
-package WelcomeToJava.handlers;
+package welcometojava.handlers;
 
 import java.util.Arrays;
 import java.util.Collections;

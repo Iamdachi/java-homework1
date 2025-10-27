@@ -1,6 +1,6 @@
-package WelcomeToJava.handlers;
+package welcometojava.handlers;
 
-import WelcomeToJava.interfaces.*;
+import welcometojava.interfaces.*;
 
 /**
  * Handles sending notifications using email and SMS.

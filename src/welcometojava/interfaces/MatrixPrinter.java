@@ -1,4 +1,4 @@
-package WelcomeToJava.interfaces;
+package welcometojava.interfaces;
 
 import org.apache.commons.math3.linear.RealMatrix;
 

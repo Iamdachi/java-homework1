@@ -1,4 +1,4 @@
-package WelcomeToJava.interfaces;
+package welcometojava.interfaces;
 
 /**
  * Functional interface for notifications.

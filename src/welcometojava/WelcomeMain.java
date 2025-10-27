@@ -1,9 +1,9 @@
-package WelcomeToJava;
+package welcometojava;
 
-import WelcomeToJava.handlers.MatrixHandler;
-import WelcomeToJava.handlers.NotificationHandler;
-import WelcomeToJava.handlers.PaymentHandler;
-import WelcomeToJava.handlers.Sorter;
+import welcometojava.handlers.MatrixHandler;
+import welcometojava.handlers.NotificationHandler;
+import welcometojava.handlers.PaymentHandler;
+import welcometojava.handlers.Sorter;
 
 /**
  * This is the last part of homework.

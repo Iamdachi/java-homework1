@@ -1,6 +1,6 @@
-package WelcomeToJava.handlers;
+package welcometojava.handlers;
 
-import WelcomeToJava.interfaces.Payment;
+import welcometojava.interfaces.Payment;
 
 /**
  * Handles payment processing using an anonymous inner class.

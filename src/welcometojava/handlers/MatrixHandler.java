@@ -1,10 +1,10 @@
-package WelcomeToJava.handlers;
+package welcometojava.handlers;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import WelcomeToJava.interfaces.MatrixOperation;
-import WelcomeToJava.interfaces.MatrixPrinter;
+import welcometojava.interfaces.MatrixOperation;
+import welcometojava.interfaces.MatrixPrinter;
 import org.apache.commons.math3.linear.*;
 import static org.apache.commons.math3.linear.MatrixUtils.createRealMatrix;
 
