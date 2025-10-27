@@ -38,7 +38,7 @@ lib/
 └── commons-math3-3.6.1.jar
 ```
 
-### This project was tested using given Java version
+### Java version
 ```bash
 openjdk 25 2025-09-16
 OpenJDK Runtime Environment (build 25+36-Ubuntu-124.04.2)
