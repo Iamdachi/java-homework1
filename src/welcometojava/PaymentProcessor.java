@@ -1,4 +1,4 @@
-package WelcomeToJava;
+package welcometojava;
 
 /**
  * Simulates payment handling and demonstrates a local class.
@@ -19,6 +19,4 @@ public class PaymentProcessor {
         System.out.println("Processing $" + amount + "...");
         new Receipt(amount).print();
     }
-
-
 }

@@ -1,4 +1,4 @@
-package WelcomeToJava;
+package welcometojava;
 
 /**
  * NotificationSystem represents a basic "system" for "sending" notifications.
