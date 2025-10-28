@@ -1,25 +1,17 @@
 # welcometojava
 
-Project demonstrating compilation, running, and creating an executable JAR of a simple Java program.
 
-### Learning about classes
-This project also demonstrates different types of classes:
+### Using Anonymous classes and lambdas
+Last task is to replace all previous classes with anonymous classes and lambdas. I did this, but not to have a very long
+main file, I broke up all of this logic into handler classes with static methods. All handlers use anonymous classes and
+lambda expressions to implement their respective interfaces.
 
-1. **Inner Class**
-    - Example: `NotificationSystem.EmailNotification`
-    - Tied to an instance of the outer class, can access its fields.
+WelcomeMain calls handlers for:
 
-2. **Static Nested Class**
-    - Example: `NotificationSystem.SMSNotification`
-    - Works independently of the outer class instance.
-
-3. **Anonymous Class**
-    - Example: custom comparator in `handleSorting` method
-    - Allows inline, one-off behavior without creating a separate class.
-
-4. **Local Class**
-    - Example: `PaymentProcessor.processPayment()` -> `Receipt`
-    - Defined inside a method, used only within that method.
+- Matrix operations (MatrixHandler)
+- Notifications (NotificationHandler)
+- Sorting (Sorter)
+- Payments (PaymentHandler)
 
 
 ### Dependencies
@@ -30,10 +22,17 @@ This project also demonstrates different types of classes:
 ```bash 
 src/
 └── welcometojava/
-    ├── MatrixUtils.java
     ├── WelcomeMain.java
-    ├── NotificationSystem.java
-    └── PaymentProcessor.java
+    ├── interfaces/
+    │   ├── MatrixOperation
+    │   ├── MatrixPrinter
+    │   ├── Notifier
+    │   └── Payment
+    └── handlers/
+        ├── MatrixHandler
+        ├── NotificationHandler
+        ├── PaymentHandler
+        └── Sorter
 lib/
 └── commons-math3-3.6.1.jar
 ```
@@ -46,18 +45,19 @@ OpenJDK 64-Bit Server VM (build 25+36-Ubuntu-124.04.2, mixed mode, sharing)
 ```
 
 ### Install Dependencies
-Make a directory `/lib` in the project root:
+1. Make a directory `/lib` in the project root:
 ```bash
 cd /path/to/project/root
 mkdir lib
 cd lib
 ```
 
-Install the dependency in the `/lib` directory:
+2. Install the dependency in the `/lib` directory:
 ```bash
 curl -O https://dlcdn.apache.org/commons/math/binaries/commons-math3-3.6.1-bin.zip
 unzip commons-math3-3.6.1-bin.zip
 rm commons-math3-3.6.1-bin.zip
+
 mv commons-math3-3.6.1/commons-math3-3.6.1.jar .
 rm -r commons-math3-3.6.1
 ```
@@ -120,4 +120,4 @@ java -cp "WelcomeApp.jar:lib/commons-math3-3.6.1.jar" welcometojava.WelcomeMain
 
 `lib/commons-math3-3.6.1.jar` - external Commons Math library
 
-`welcometojava.WelcomeMain` - fully qualified main class
+`welcometojava.WelcomeMain` - fully qualified main cl
