@@ -57,6 +57,8 @@ cd lib
 curl -O https://dlcdn.apache.org/commons/math/binaries/commons-math3-3.6.1-bin.zip
 unzip commons-math3-3.6.1-bin.zip
 rm commons-math3-3.6.1-bin.zip
+mv commons-math3-3.6.1/commons-math3-3.6.1.jar .
+rm -r commons-math3-3.6.1
 ```
 
 ### Compilation and execution of bytecode
